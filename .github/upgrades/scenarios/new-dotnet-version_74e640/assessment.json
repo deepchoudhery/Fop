@@ -1,0 +1,494 @@
+{
+  "settings": {
+    "components": {
+      "code": true,
+      "binaries": false
+    },
+    "targetId": "net10.0",
+    "targetDisplayName": ".NETCoreApp,Version=v10.0"
+  },
+  "analysisStartTime": "2026-02-18T22:42:58.5393278Z",
+  "analysisEndTime": "2026-02-18T22:43:03.7246077Z",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 6,
+      "issues": 3,
+      "incidents": 11,
+      "effort": 11
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 6,
+        "Optional": 1,
+        "Potential": 4,
+        "Information": 0
+      },
+      "category": {
+        "NuGet": 5,
+        "Project": 6
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "src/Fop.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 2,
+      "properties": {
+        "appName": "Fop",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "net6.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 44,
+        "numberOfCodeFiles": 44,
+        "linesTotal": 918,
+        "linesOfCode": 918,
+        "totalApiScanned": 0,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "e458c188-88cf-4301-beb8-a8c09cde50f4",
+          "ruleId": "NuGet.0004",
+          "projectPath": "src/Fop.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Linq.Dynamic.Core, 1.2.24\n\nRecommendation:\n\nSystem.Linq.Dynamic.Core, 1.7.1",
+              "protected": "System.Linq.Dynamic.Core, 1.2.24\n\nRecommendation:\n\nSystem.Linq.Dynamic.Core, 1.7.1"
+            },
+            "kind": "File",
+            "path": "src/Fop.csproj",
+            "snippet": "System.Linq.Dynamic.Core, 1.2.24\n\nRecommendation:\n\nSystem.Linq.Dynamic.Core, 1.7.1",
+            "protectedSnippet": "System.Linq.Dynamic.Core, 1.2.24\n\nRecommendation:\n\nSystem.Linq.Dynamic.Core, 1.7.1",
+            "label": "System.Linq.Dynamic.Core 1.2.24",
+            "properties": {
+              "PackageId": "System.Linq.Dynamic.Core",
+              "PackageVersion": "1.2.24",
+              "PackageNewVersion": "1.7.1",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "efba63a0-e00d-4a26-b1b5-0e2826c3954d",
+          "ruleId": "Project.0002",
+          "projectPath": "src/Fop.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net6.0\nRecommended target framework: net10.0",
+              "protected": "Current target framework: net6.0\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "src/Fop.csproj",
+            "snippet": "Current target framework: net6.0\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: net6.0\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net6.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "test/Fop.Tests/Fop.Tests.csproj",
+      "startingProject": true,
+      "issues": 1,
+      "storyPoints": 1,
+      "properties": {
+        "appName": "Fop.Tests",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "net6.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 3,
+        "numberOfCodeFiles": 3,
+        "linesTotal": 552,
+        "linesOfCode": 552,
+        "totalApiScanned": 63,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "261c34d0-7451-4736-ad80-1530b683e2f4",
+          "ruleId": "Project.0002",
+          "projectPath": "test/Fop.Tests/Fop.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net6.0\nRecommended target framework: net10.0",
+              "protected": "Current target framework: net6.0\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "test/Fop.Tests/Fop.Tests.csproj",
+            "snippet": "Current target framework: net6.0\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: net6.0\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net6.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "sample/Sample.Api/Sample.Api.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 3,
+      "properties": {
+        "appName": "Sample.Api",
+        "projectKind": "AspNetCore",
+        "frameworks": [
+          "net6.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 7,
+        "numberOfCodeFiles": 5,
+        "linesTotal": 208,
+        "linesOfCode": 188,
+        "totalApiScanned": 48,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "a81a70c0-a758-441a-9b90-c0834db2d1a9",
+          "ruleId": "NuGet.0002",
+          "projectPath": "sample/Sample.Api/Sample.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNetCore.Mvc.NewtonsoftJson, 3.1.3\n\nRecommendation:\n\nRemove Microsoft.AspNetCore.Mvc.NewtonsoftJson, and replace with new package Microsoft.AspNetCore.Mvc.NewtonsoftJson 10.0.3",
+              "protected": "Microsoft.AspNetCore.Mvc.NewtonsoftJson, 3.1.3\n\nRecommendation:\n\nRemove Microsoft.AspNetCore.Mvc.NewtonsoftJson, and replace with new package Microsoft.AspNetCore.Mvc.NewtonsoftJson 10.0.3"
+            },
+            "kind": "File",
+            "path": "sample/Sample.Api/Sample.Api.csproj",
+            "snippet": "Microsoft.AspNetCore.Mvc.NewtonsoftJson, 3.1.3\n\nRecommendation:\n\nRemove Microsoft.AspNetCore.Mvc.NewtonsoftJson, and replace with new package Microsoft.AspNetCore.Mvc.NewtonsoftJson 10.0.3",
+            "protectedSnippet": "Microsoft.AspNetCore.Mvc.NewtonsoftJson, 3.1.3\n\nRecommendation:\n\nRemove Microsoft.AspNetCore.Mvc.NewtonsoftJson, and replace with new package Microsoft.AspNetCore.Mvc.NewtonsoftJson 10.0.3",
+            "label": "Microsoft.AspNetCore.Mvc.NewtonsoftJson 3.1.3",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Mvc.NewtonsoftJson",
+              "PackageVersion": "3.1.3",
+              "PackageNewVersion": "10.0.3",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "e611a085-e87c-4bac-a81f-5f7e4e574075",
+          "ruleId": "NuGet.0002",
+          "projectPath": "sample/Sample.Api/Sample.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.VisualStudio.Web.CodeGeneration.Design, 3.1.2\n\nRecommendation:\n\nRemove Microsoft.VisualStudio.Web.CodeGeneration.Design, and replace with new package Microsoft.VisualStudio.Web.CodeGeneration.Design 10.0.2",
+              "protected": "Microsoft.VisualStudio.Web.CodeGeneration.Design, 3.1.2\n\nRecommendation:\n\nRemove Microsoft.VisualStudio.Web.CodeGeneration.Design, and replace with new package Microsoft.VisualStudio.Web.CodeGeneration.Design 10.0.2"
+            },
+            "kind": "File",
+            "path": "sample/Sample.Api/Sample.Api.csproj",
+            "snippet": "Microsoft.VisualStudio.Web.CodeGeneration.Design, 3.1.2\n\nRecommendation:\n\nRemove Microsoft.VisualStudio.Web.CodeGeneration.Design, and replace with new package Microsoft.VisualStudio.Web.CodeGeneration.Design 10.0.2",
+            "protectedSnippet": "Microsoft.VisualStudio.Web.CodeGeneration.Design, 3.1.2\n\nRecommendation:\n\nRemove Microsoft.VisualStudio.Web.CodeGeneration.Design, and replace with new package Microsoft.VisualStudio.Web.CodeGeneration.Design 10.0.2",
+            "label": "Microsoft.VisualStudio.Web.CodeGeneration.Design 3.1.2",
+            "properties": {
+              "PackageId": "Microsoft.VisualStudio.Web.CodeGeneration.Design",
+              "PackageVersion": "3.1.2",
+              "PackageNewVersion": "10.0.2",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "cff09a14-b1ca-4298-b039-c14d2454747a",
+          "ruleId": "Project.0002",
+          "projectPath": "sample/Sample.Api/Sample.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net6.0\nRecommended target framework: net10.0",
+              "protected": "Current target framework: net6.0\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "sample/Sample.Api/Sample.Api.csproj",
+            "snippet": "Current target framework: net6.0\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: net6.0\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net6.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "sample/Sample.Data/Sample.Data.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 3,
+      "properties": {
+        "appName": "Sample.Data",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "net6.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 5,
+        "numberOfCodeFiles": 5,
+        "linesTotal": 291,
+        "linesOfCode": 291,
+        "totalApiScanned": 20,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "dceb3d53-36d6-4300-a88e-a48eeb228cbf",
+          "ruleId": "NuGet.0002",
+          "projectPath": "sample/Sample.Data/Sample.Data.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore, 3.1.3\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore, and replace with new package Microsoft.EntityFrameworkCore 10.0.3",
+              "protected": "Microsoft.EntityFrameworkCore, 3.1.3\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore, and replace with new package Microsoft.EntityFrameworkCore 10.0.3"
+            },
+            "kind": "File",
+            "path": "sample/Sample.Data/Sample.Data.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore, 3.1.3\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore, and replace with new package Microsoft.EntityFrameworkCore 10.0.3",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore, 3.1.3\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore, and replace with new package Microsoft.EntityFrameworkCore 10.0.3",
+            "label": "Microsoft.EntityFrameworkCore 3.1.3",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore",
+              "PackageVersion": "3.1.3",
+              "PackageNewVersion": "10.0.3",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "7bc100c3-1670-4469-ae5f-53439e562152",
+          "ruleId": "NuGet.0002",
+          "projectPath": "sample/Sample.Data/Sample.Data.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.SqlServer, 3.1.3\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.SqlServer, and replace with new package Microsoft.EntityFrameworkCore.SqlServer 10.0.3",
+              "protected": "Microsoft.EntityFrameworkCore.SqlServer, 3.1.3\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.SqlServer, and replace with new package Microsoft.EntityFrameworkCore.SqlServer 10.0.3"
+            },
+            "kind": "File",
+            "path": "sample/Sample.Data/Sample.Data.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.SqlServer, 3.1.3\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.SqlServer, and replace with new package Microsoft.EntityFrameworkCore.SqlServer 10.0.3",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.SqlServer, 3.1.3\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.SqlServer, and replace with new package Microsoft.EntityFrameworkCore.SqlServer 10.0.3",
+            "label": "Microsoft.EntityFrameworkCore.SqlServer 3.1.3",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.SqlServer",
+              "PackageVersion": "3.1.3",
+              "PackageNewVersion": "10.0.3",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "c11a5f72-f968-41ab-8f66-b28fa21729d9",
+          "ruleId": "Project.0002",
+          "projectPath": "sample/Sample.Data/Sample.Data.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net6.0\nRecommended target framework: net10.0",
+              "protected": "Current target framework: net6.0\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "sample/Sample.Data/Sample.Data.csproj",
+            "snippet": "Current target framework: net6.0\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: net6.0\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net6.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "sample/Sample.Entity/Sample.Entity.csproj",
+      "startingProject": true,
+      "issues": 1,
+      "storyPoints": 1,
+      "properties": {
+        "appName": "Sample.Entity",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "net6.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 3,
+        "numberOfCodeFiles": 3,
+        "linesTotal": 55,
+        "linesOfCode": 55,
+        "totalApiScanned": 51,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "e1fb846e-2d05-467d-be86-367553983524",
+          "ruleId": "Project.0002",
+          "projectPath": "sample/Sample.Entity/Sample.Entity.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net6.0\nRecommended target framework: net10.0",
+              "protected": "Current target framework: net6.0\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "sample/Sample.Entity/Sample.Entity.csproj",
+            "snippet": "Current target framework: net6.0\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: net6.0\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net6.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "sample/Sample.Service/Sample.Repository.csproj",
+      "startingProject": true,
+      "issues": 1,
+      "storyPoints": 1,
+      "properties": {
+        "appName": "Sample.Repository",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "net6.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 2,
+        "numberOfCodeFiles": 2,
+        "linesTotal": 31,
+        "linesOfCode": 31,
+        "totalApiScanned": 2,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "7f1ca9eb-dc31-49b6-9532-d9d746cb2eb1",
+          "ruleId": "Project.0002",
+          "projectPath": "sample/Sample.Service/Sample.Repository.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net6.0\nRecommended target framework: net10.0",
+              "protected": "Current target framework: net6.0\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "sample/Sample.Service/Sample.Repository.csproj",
+            "snippet": "Current target framework: net6.0\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: net6.0\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net6.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    }
+  ],
+  "rules": {
+    "NuGet.0004": {
+      "id": "NuGet.0004",
+      "isFeature": false,
+      "description": "NuGet package contains security vulnerabilities.\n\nPackage needs to be upgraded to a newer version that addresses known security vulnerabilities.",
+      "label": "NuGet package contains security vulnerability",
+      "severity": "Optional",
+      "effort": 1
+    },
+    "Project.0002": {
+      "id": "Project.0002",
+      "isFeature": false,
+      "description": "Project\u0027s target framework(s) needs to be changed to the new target framework that you selected for this upgrade.\n\nDuring upgrade target framework will be adjusted to corresponding platform when applicable. In some cases project would result in multiple target frameworks after the upgrade if it was using features that now have their own platforms in modern .NET frameworks (windows, iOS, Android etc).",
+      "label": "Project\u0027s target framework(s) needs to be changed",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0002": {
+      "id": "NuGet.0002",
+      "isFeature": false,
+      "description": "NuGet package upgrade is recommended for selected target framework.\n\nStandard .NET packages are recommended to have versions matching version of .NET that project targets.\n\nSome other packages also are known to work better for selected target frameworks.",
+      "label": "NuGet package upgrade is recommended",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262530",
+          "isCustom": false
+        }
+      ]
+    }
+  }
+}
