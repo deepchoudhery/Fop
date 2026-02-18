@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore;
+﻿using Microsoft.AspNetCore.Hosting;
 using Sample.Data;
 
 namespace Sample.Api;
@@ -7,7 +7,13 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        var host = CreateWebHostBuilder(args).Build();
+        var builder = Host.CreateDefaultBuilder(args)
+            .ConfigureWebHostDefaults(webBuilder =>
+            {
+                webBuilder.UseStartup<Startup>();
+            });
+        
+        var host = builder.Build();
 
         using (var scope = host.Services.CreateScope())
         {
@@ -24,10 +30,5 @@ public class Program
         }
 
         host.Run();
-
     }
-
-    public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-        WebHost.CreateDefaultBuilder(args)
-            .UseStartup<Startup>();
 }
